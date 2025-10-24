@@ -1,0 +1,113 @@
+/*----------------------------------------------
+Autor: Nehikari Guereta
+Asignatura: LMSGI
+Unidad: 1
+Tarea: Tarea Evaluativa 2
+Descripción: Estilos comunes para las páginas de las descripciones de los productos 
+Fecha: 24/10/2025
+----------------------------------------------------*/
+
+/* Fondo general y color de texto */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Sección del título principal y texto introductorio */
+.producto-hero {
+  max-width: 1200px;
+  margin: 60px auto 10px;
+  padding: 0 20px;
+}
+
+/* Título del producto */
+.producto-hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Párrafo de introducción del producto */
+.producto-intro {
+  max-width: 900px;
+  color: #cfd6e4;
+  font-size: 1.125rem;
+}
+
+/* Contenedor principal con la imagen a la izquierda y el texto a la derecha */
+.producto-detalle {
+  max-width: 1200px;
+  margin: 30px auto 80px;
+  padding: 0 20px;
+}
+
+/* Distribución en dos columnas */
+.detalle-contenedor {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Imagen del producto */
+.detalle-imagen {
+  flex: 1 1 520px;
+  min-width: 320px;
+  margin: 0;
+}
+
+.detalle-imagen img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(255,255,255,0.10);
+}
+
+
+/* Bloque de texto con las características */
+.detalle-texto {
+  flex: 1 1 420px;
+  min-width: 320px;
+}
+
+/* Subtítulo de la sección de características */
+.detalle-texto h2 {
+  font-size: 1.8rem;
+  margin: 6px 0 10px;
+  color: #ffffff;
+}
+
+/* Lista con las ventajas del producto */
+.lista-ventajas {
+  padding-left: 18px;
+  margin: 0 0 16px 0;
+  color: #cfd6e4;
+}
+
+.lista-ventajas li {
+  margin-bottom: 8px;
+}
+
+/* Botón que enlaza con la página de contacto */
+.btn-primario {
+  display: inline-block;
+  background-color: #a970ff;
+  color: #000;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+/* Efecto al pasar el ratón por el botón */
+.btn-primario:hover {
+  background-color: #8c5ae5;
+  box-shadow: 0 0 12px rgba(169,112,255,0.5);
+  transform: translateY(-1px);
+}

@@ -1,0 +1,94 @@
+<!---------------------------------
+Autor: Nehikari Guereta
+Asignatura: LMSGI
+Unidad: 1
+Tarea: Tarea Evaluativa 2 - Primer sitio web con formato 
+Descripción: Página principal (presentación de Nexa con banner y clientes)
+Fecha: 02/10/2025
+--------------------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexa | Plataforma Inteligente</title>
+  <meta name="description" content="Nexa - Plataforma inteligente de gestión empresarial sostenible.">
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="styles/index_style.css">
+  <link rel="stylesheet" href="styles/Nav-footer_style.css">
+</head>
+
+<body>
+  <!---------------------------------
+  Cabecera principal con menú de navegación
+  --------------------------------->
+  <header>
+    <nav class="topnav">
+      <a href="index.html" class="inicio">Inicio</a>
+      <a href="scripts/productos.html">Productos</a>
+      <a href="scripts/blog.html">Blog</a>
+      <a href="scripts/contacto.html" class="ayuda">Contacto</a>
+    </nav>
+  </header>
+
+  <!---------------------------------
+  Sección principal del banner con imagen y texto
+  --------------------------------->
+  <section class="bannerindex">
+    
+    <!-- 
+      Se usa un <div> para agrupar la imagen y el texto del banner.
+      No existe una etiqueta semántica específica que represente este tipo de bloque visual.
+      Se utiliza únicamente para aplicar estilos de diseño con flexbox o posicionamiento relativo/absoluto.
+    -->
+    <div class="bannerindex-contenedor">
+      
+      <!-- Imagen del banner principal -->
+      <img src="images/index/banner.jpg" alt="Banner principal de Nexa" class="bannerindex-img">
+
+      <!-- Se usa un <div> para posicionar el texto sobre la imagen.-->
+      <div class="bannerindex-text">
+        <h1>Diseñamos, desarrollamos, mantenemos. <br>Fácil.</h1>
+        <p>Código con alma</p>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------
+  Sección de clientes con logotipos de empresas
+  --------------------------------->
+  <section class="clientes">
+    <h2>Creamos impacto</h2>
+    <p>Descubre proyectos destacados donde hemos impulsado y transformado negocios junto a nuestros clientes.</p>
+
+    <!-- Agrupar las imágenes de los logotipos de clientes -->
+    <div class="clientes-imagenes">
+      <img src="images/index/1.png" alt="Logo Cliente 1">
+      <img src="images/index/2.png" alt="Logo Cliente 2">
+      <img src="images/index/3.png" alt="Logo Cliente 3">
+    </div>
+  </section>
+
+  <!---------------------------------
+  Pie de página con información de contacto y derechos
+  --------------------------------->
+  <footer class="site-footer">
+
+    <!-- Se usa un <div> para centrar y limitar el ancho del contenido del footer.-->
+    <div class="footer-contenido">
+      <h3>NEXA Software Solutions</h3>
+      <p>Desarrollo de software empresarial sostenible e inteligente.</p>
+      <p><strong>Dirección:</strong> Calle Innovación 42, 01010 Vitoria-Gasteiz</p>
+      <p><strong>Teléfono:</strong> +34 945 555 123</p>
+      <p><strong>Email:</strong> contacto@nexa.es</p>
+      <p>© 2025 NEXA Software Solutions. Todos los derechos reservados.</p>
+      <p>
+        Este sitio web se encuentra bajo licencia 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons BY-NC-SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+/*
+Autor: Nehikari Guereta
+Asignatura: LMSGI
+Unidad: 1
+Tarea: Tarea Evaluativa 2 - Aplicar estilos con CSS
+Descripción: Estilos para la página de Blog (3 artículos en línea) + cabecera con imagen y texto superpuesto
+Fecha: 24/10/2025
+*/
+
+/*   CABECERA DEL BLOG (estilo W3Schools:  */
+.blog-header {
+  position: relative;          /* referencia para el overlay (texto encima) */
+  width: 100%;
+  height: 350px;               /* altura fija para un hero compacto */
+  overflow: hidden;
+  border-bottom: 2px solid #333;
+}
+
+.blog-header .header-img {
+  position: absolute;          /* ocupa todo el contenedor */
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;           /* recorta sin deformar */
+  filter: brightness(60%);     /* oscurece un poco para mejorar legibilidad del texto */
+  display: block;
+}
+
+.texto-superpuesto-blog {
+  position: absolute;          /* texto centrado al estilo W3Schools */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+  width: 90%;                  /* margen lateral para que no pegue al borde */
+}
+
+.texto-superpuesto-blog h1 {
+  font-size: 2.6rem;
+  margin: 0 0 10px 0;
+  color: #a970ff;              /* coherente con tu paleta */
+  font-family: 'Playfair Display', serif;
+}
+
+.texto-superpuesto-blog p {
+  font-size: 1.125rem;
+  margin: 0;
+  color: #eaeaea;
+}
+
+
+/* ---------------------------
+   Bloque principal del blog
+---------------------------- */
+.blog {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 20px 60px;
+  text-align: center;
+}
+
+/* ---------------------------
+   Introducción del blog
+---------------------------- */
+.intro-blog h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.intro-blog p {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+/* ---------------------------
+   Contenedor general de artículos
+---------------------------- */
+.articulos {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  flex-wrap: nowrap;       /* mantiene las 3 en una fila */
+  width: 95vw;
+  margin: 0 auto;
+}
+
+/* ---------------------------
+   Tarjeta de cada artículo
+---------------------------- */
+.post {
+  background-color: #111111;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+  overflow: hidden;         /* oculta bordes redondeados */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 18px rgba(169, 112, 255, 0.3);
+}
+
+/* ---------------------------
+   Imagen del artículo
+---------------------------- */
+.post img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 1px solid #333333;
+}
+
+/* ---------------------------
+   Texto dentro del artículo
+---------------------------- */
+.post h2 {
+  font-size: 1.2rem;
+  margin: 16px 16px 8px;
+  color: #ffffff;
+}
+
+.post p {
+  margin: 0 16px 20px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* ---------------------------
+   Botón "Seguir leyendo"
+---------------------------- */
+.btn-leer {
+  display: inline-block;
+  margin: 0 16px 20px;
+  padding: 10px 14px;
+  text-align: center;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.btn-leer:hover {
+  background-color: #a970ff;
+  color: #000000;
+  box-shadow: 0 0 12px rgba(169, 112, 255, 0.5);
+}

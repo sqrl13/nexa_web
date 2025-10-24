@@ -1,0 +1,108 @@
+/*
+Autor: Nehikari Guereta
+Asignatura: LMSGI
+Unidad: 1
+Tarea: Tarea Evaluativa 2 - Aplicar estilos con CSS
+Descripción: Estilos para página de Productos (catálogo visual)
+Fecha: 02/10/2025
+*/
+
+/* ---------------------------
+   Bloque de descripción
+---------------------------- */
+.descripcion {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000000;
+}
+
+.descripcion h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.descripcion p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #dddddd;
+}
+
+/* ---------------------------
+   Catálogo general
+---------------------------- */
+.catalogo {
+  /* contenedor del catálogo */
+  padding: 10px 20px 40px 20px;
+}
+
+/* ---------------------------
+   Fila de productos (3 por fila)
+---------------------------- */
+.fila {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 30px 0;
+}
+
+/* ---------------------------
+   Tarjeta de producto (imagen + botón)
+---------------------------- */
+.producto {
+  display: flex;
+  flex-direction: column;   /* imagen arriba, botón debajo */
+  align-items: center;
+}
+
+/* ---------------------------
+   Imagen del producto
+---------------------------- */
+.producto img {
+  width: 280px;
+  height: 180px;
+  object-fit: contain;       /* mantiene proporciones del SVG */
+  background-color: #0b0b0b; /* fondo por si hay transparencia */
+  border-radius: 10px;
+  border: 1px solid #333333;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.10);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 12px;       /* separación con el botón */
+}
+
+.producto img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(169, 112, 255, 0.40);
+}
+
+/* ---------------------------
+   Botón/enlace del producto
+---------------------------- */
+.btn-producto {
+  width: 280px;                 /* igual que la imagen para alinear 1:1 */
+  display: inline-block;
+  text-align: center;
+  background-color: #111111;
+  color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 10px;
+  padding: 12px 16px;
+  font-weight: 700;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+  transition: background-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.2s;
+}
+
+.btn-producto:hover {
+  background-color: #a970ff;
+  color: #000000;
+  box-shadow: 0 4px 15px rgba(169, 112, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-producto:focus {
+  outline: 2px solid #a970ff;
+  outline-offset: 2px;
+}
+

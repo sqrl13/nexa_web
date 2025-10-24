@@ -1,0 +1,126 @@
+/*
+Autor: Nehikari Guereta
+Asignatura: LMSGI
+Unidad: 1
+Tarea: Tarea Evaluativa 2 - Aplicar estilos con CSS
+Descripción: Estilos de la página principal (banner + clientes)
+Fecha: 24/10/2025
+*/
+
+/* Fondo general y color de texto */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ---------------------------
+   Banner principal (imagen + texto)
+---------------------------- */
+.bannerindex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000;
+}
+
+/* Contenedor general del banner */
+.bannerindex-contenedor {
+  display: contents;
+}
+
+/* Imagen del banner */
+.bannerindex-img {
+  flex: 1 1 520px;
+  min-height: 280px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Bloque de texto del banner */
+.bannerindex-text {
+  flex: 1 1 420px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Título principal del banner */
+.bannerindex-text h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Subtítulo o descripción del banner */
+.bannerindex-text p {
+  margin: 0;
+  color: #cfd6e4;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+/* ---------------------------
+   Sección de clientes (empresas destacadas)
+---------------------------- */
+.clientes {
+  padding: 60px 20px 80px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Título de la sección de clientes */
+.clientes h2 {
+  margin: 0 0 12px 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Texto introductorio de clientes */
+.clientes p {
+  margin: 0 auto 36px;
+  max-width: 800px;
+  color: #cfd6e4;
+  line-height: 1.6;
+  font-size: 1.125rem;
+}
+
+/* ---------------------------
+   Galería de imágenes (logos o proyectos)
+---------------------------- */
+.clientes-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  width: 95vw;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Imágenes de clientes o proyectos */
+.clientes-imagenes img {
+  width: 30%;
+  min-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #333;
+  background-color: #0b0b0b;
+  box-shadow: 0 2px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al pasar el ratón por las imágenes */
+.clientes-imagenes img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 18px rgba(169, 112, 255, 0.4);
+}

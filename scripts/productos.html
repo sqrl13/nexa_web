@@ -1,0 +1,103 @@
+<!---------------------------------
+Autor: Nehikari Guereta
+Asignatura: LMSGI
+Unidad: 1
+Tarea: Tarea Evaluativa 2 - Primer sitio web con formato 
+Descripción: Página de Productos (catálogo visual con 3 columnas)
+Fecha: 02/10/2025
+--------------------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexa | Productos</title>
+  <meta name="description" content="Listado de productos de Nexa.">
+  <link rel="stylesheet" href="../styles/productos_style.css">
+  <link rel="stylesheet" href="../styles/Nav-footer_style.css">
+</head>
+
+<body>
+  <!---------------------------------
+  Cabecera y menú de navegación principal
+  --------------------------------->
+  <header>
+    <nav class="topnav">
+      <a href="../index.html" class="inicio">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html" class="ayuda">Contacto</a>
+    </nav>
+  </header>
+
+  <!---------------------------------
+  Contenido principal
+  --------------------------------->
+  <main>
+    <section class="descripcion">
+      <h1>Nuestros Productos</h1>
+      <p>Soluciones pensadas para simplificar tu día a día</p>
+    </section>
+
+    <!---------------------------------
+    Catálogo de productos (2 filas de 3 productos)
+    --------------------------------->
+    <section class="catalogo">
+      <div class="fila">
+        <article class="producto">
+          <img src="../images/productos/1.svg" alt="Nexa Analytics">
+          <a class="btn-producto" href="../scripts/nexa_analitycs.html">Nexa Analytics</a>
+        </article>
+
+        <article class="producto">
+          <img src="../images/productos/2.svg" alt="Nexa Automate">
+          <a class="btn-producto" href="../scripts/nexa_automate.html">Nexa Automate</a>
+        </article>
+
+        <article class="producto">
+          <img src="../images/productos/3.svg" alt="Nexa CloudSuite">
+          <a class="btn-producto" href="../scripts/nexa_cloudsuite.html">Nexa CloudSuite</a>
+        </article>
+      </div>
+
+      <div class="fila">
+        <article class="producto">
+          <img src="../images/productos/4.svg" alt="Nexa Finance Pro">
+          <a class="btn-producto" href="../scripts/nexa_financepro.html">Nexa Finance Pro</a>
+        </article>
+
+        <article class="producto">
+          <img src="../images/productos/5.svg" alt="Nexa ProjectMaster">
+          <a class="btn-producto" href="../scripts/nexa_projectmaster.html">Nexa ProjectMaster</a>
+        </article>
+
+        <article class="producto">
+          <img src="../images/productos/6.svg" alt="Nexa Sales AI">
+          <a class="btn-producto" href="../scripts/nexa_salesAI.html">Nexa Sales AI</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!---------------------------------
+  Pie de página con información de contacto y derechos
+  --------------------------------->
+  <footer class="site-footer">
+    <div class="footer-contenido">
+      <h3>NEXA Software Solutions</h3>
+      <p>Desarrollo de software empresarial sostenible e inteligente.</p>
+
+      <p><strong>Dirección:</strong> Calle Innovación 42, 01010 Vitoria-Gasteiz</p>
+      <p><strong>Teléfono:</strong> +34 945 555 123</p>
+      <p><strong>Email:</strong> contacto@nexa.es</p>
+
+      <p>© 2025 NEXA Software Solutions. Todos los derechos reservados.</p>
+      <p>
+        Este sitio web y su contenido se encuentran bajo licencia 
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons BY-NC-SA 4.0</a>.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
